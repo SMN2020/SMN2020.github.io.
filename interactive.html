@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<Header>
+  <Title> Trivia </Title>
+  <meta http-equiv="author" content="SNM">
+  <link href="interactive.css" type="text/css" rel="stylesheet" />
+  <link href="menu.css" type="text/css" rel="stylesheet" />
+  <script src="interactive.js"></script>
+  <!-- help from https://www.sitepoint.com/simple-javascript-quiz/-->
+</Header>
+<!-- the quiz will come up when the you click on the page-->
+<body onload="quizfunction();">
+<!--"Dance Studio logo-->
+  <div class="box box">
+    <h1>The Dance Studio</h1>
+  </div>
+  <!--links pages together-->
+  <div class="Menu"> <a href="interactive.html">Trivia</a> <a href="Balletmainpage.html">Ballet</a> <a href="Latinmainpage.html">Latin</a> <a href="Hiphopmainpage.html">Hip Hop</a> <a href="DanceOpeningPage.html">Home</a> </div>
+  <h2>Let's See How Much You've Learned</h2>
+<!--makes the quiz-->
+  <div class="quiz-container">
+    <div id="quiz"></div>
+    <!-- Next,Prev, and submit button-->
+  </div> <button id="previous">Previous Question</button> <button id="next">Next Question</button> <button id="submit">Submit Quiz</button>
+  <div id="results"></div>
+</body>
+
+</html>

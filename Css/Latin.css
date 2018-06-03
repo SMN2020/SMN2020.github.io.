@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    background: black;
+    font-size: calc(10px + 1vw);
+    font-family: cursive;
+}
+
+
+.h {
+    background-color: white;
+    color: black;
+}
+
+
+.H2 {
+    font-size: calc(10px + 3vw);
+    font-weight: bold;
+    font-family: cursive;
+    color: grey;
+    text-align: left;
+}
+
+.H1 {
+    font-size: calc(15px + 5vw);
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.Salsa {
+    grid-area: Salsa;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.Salsa:hover {
+    grid-area: Salsa;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.Salsa:hover~.PictureA {
+    grid-area: PictureA;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+.Bachata {
+    grid-area: Bachata;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.Bachata:hover {
+    grid-area: Bachata;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.Bachata:hover~.PictureB {
+    grid-area: PictureB;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+.PictureA {
+    grid-area: PictureA;
+    opacity: 0.1;
+    text-align: center;
+}
+
+.PictureB {
+    grid-area: PictureB;
+    opacity: 0.1;
+    text-align: center;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "Salsa Salsa Salsa Salsa Salsa" "Bachata Bachata Bachata Bachata Bachata" "PictureA PictureA ... PictureB PictureB";
+    background-color: black;
+    color: #444;
+}
+
+.box {
+    color: #fff;
+    background-color: black;
+
+
+}
+
+.box:hover {
+    background-color: bisque;
+}
+
+.Salsa {
+    animation-name: example;
+    animation-duration: 5s;
+
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.PictureA {
+    animation-name: picture;
+    animation-duration: 5s;
+
+
+}
+
+@keyframes picture {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.Bachata {
+    animation-name: example2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+
+}
+
+@keyframes example2 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+
+    }
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+.PictureB {
+    animation-name: picture2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+
+}
+
+@keyframes picture2 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}

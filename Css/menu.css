@@ -1,0 +1,26 @@
+.Menu{
+    overflow: hidden;
+    background-color:white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+
+}
+
+.Menu a {
+    
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    line-height: 30px;
+    border-radius: 4px;
+    float:right;
+    font-family:cursive;
+}
+.Menu a:Hover {
+    background-color: #ddd;
+    color: black;
+}

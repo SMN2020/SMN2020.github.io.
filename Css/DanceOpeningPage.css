@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  background: Black;
+  color: White;
+  font-size: calc(10px + 1vw);
+  font-family: cursive;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  height: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0)
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+  text-align: center
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+
+}
+
+/*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+
+H1 {
+  font-size: calc(15px + 5vw);
+  font-weight: bold;
+  font-family: fantasy;
+}
+
+H3 {
+  font-size: calc(15px + 2vw);
+  font-weight: bold;
+  font-family: fantasy;
+
+}
+
+H2 {
+  font-size: calc(15px + 4vw);
+  font-weight: bold;
+  font-family: fantasy;
+  text-align: center;
+}
+
+.Welcome {
+  grid-area: Welcome;
+  text-align: center;
+  color: white;
+}
+
+.intro {
+  grid-area: intro;
+  background-color: bisque;
+  color: black;
+
+}
+
+.SMN {
+  grid-area: SMN;
+
+}
+
+.Shaunaa {
+  grid-area: Shaunaa;
+}
+
+.Shaunaa:Hover {
+  font-size: cacl(15px+5vw);
+}
+
+.Matijanay {
+  grid-area: Matijanay;
+}
+
+.Matijanay:Hover {
+  font-size: cacl(15px+5vw);
+}
+
+.Nadirah {
+  grid-area: Nadirah;
+}
+
+.Nadirah:Hover {
+  font-size: cacl(15px+5vw);
+}
+
+.Container {
+  position: relative;
+  width: 100%;
+  grid-area: Container;
+  font-size: cacl(10px+1vw)
+}
+
+.Image {
+  display: block;
+  width: 100%;
+  height:auto;
+}
+
+.content1 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: bisque;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  font-size: cacl(10px+1vw)
+}
+
+.Container:hover .content1 {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: grey;
+  font-size: cacl(10px+1vw);
+  font-family: monospace;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.Container2 {
+  position: relative;
+  width: 100%;
+  grid-area: Container2;
+  font-size: cacl(10px+1vw)
+}
+
+
+.content2 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: bisque;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  font-size: cacl(10px+1vw)
+}
+
+.Container2:hover .content2 {
+  width: 100%;
+  left: 0;
+}
+
+.Container3 {
+  position: relative;
+  width: 100%;
+  grid-area: Container3;
+  font-size: cacl(10px+2vw)
+}
+
+
+.content3 {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: bisque;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+  font-size: cacl(10px+1vw)
+}
+
+.Container3:hover .content3 {
+  width: 100%;
+  left: 0;
+}
+
+/*https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
+  grid-template-areas: "SMN SMN SMN SMN SMN SMN" "Shaunaa Shaunaa Matijanay Matijanay Nadirah Nadirah" "Container Container Container2 Container2 Container3 Container3";
+
+  background-color: black;
+  color: #444;
+}
+
+.box {
+  color: #fff;
+  background-color: white;
+  color: Black;
+}
+
+.SMNPicture {
+  alignment: center;
+}

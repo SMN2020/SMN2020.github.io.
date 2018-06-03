@@ -1,0 +1,373 @@
+body {
+    background-color: black;
+    font-size: calc(15px+ 3vw);
+    font-family: cursive;
+    margin: 0;
+}
+
+.H1 {
+    font-size: calc(15px + 5vw);
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.H2 {
+    font-size: calc(10px + 3vw);
+    font-weight: bold;
+    font-family: cursive;
+    color: grey;
+    text-align: left;
+}
+
+.FirstPosition {
+    grid-area: FirstPosition;
+    opacity: 0.1;
+    transition-duration: 1s;
+}
+
+.FirstPosition:hover {
+    grid-area: FirstPosition;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+/*when the position comes up the picture that goes with it will also light up*/
+
+.FirstPosition:hover~.PictureA {
+    grid-area: PictureA;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 1s;
+}
+
+.secondposition {
+    grid-area: secondposition;
+    opacity: 0.1;
+    transition-duration: 1s;
+}
+
+.secondposition:hover {
+    grid-area: secondposition;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.secondposition:hover~.PictureB {
+    grid-area: PictureB;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 1s;
+}
+
+.thirdposition {
+    grid-area: thirdposition;
+    opacity: 0.1;
+    transition-duration: 1s;
+}
+
+.thirdposition:hover {
+    grid-area: thirdposition;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.thirdposition:hover~.PictureC {
+    grid-area: PictureC;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 1s;
+}
+
+.fourthposition {
+    grid-area: fourthposition;
+    opacity: 0.1;
+    transition-duration: 1s;
+}
+
+.fourthposition:hover {
+    grid-area: fourthposition;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.fourthposition:hover~.PictureD {
+    grid-area: PictureD;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 1s;
+}
+
+.FifthPosition {
+    grid-area: FifthPosition;
+    opacity: 0.1;
+    transition-duration: 1s;
+}
+
+.FifthPosition:hover {
+    grid-area: FifthPosition;
+    opacity: 1;
+    transition-duration: 1s;
+}
+
+.FifthPosition:hover~.PictureE {
+    grid-area: PictureE;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 1s;
+}
+
+.PictureA {
+    grid-area: PictureA;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureB {
+    grid-area: PictureB;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureC {
+    grid-area: PictureC;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureD {
+    grid-area: PictureD;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureE {
+    grid-area: PictureE;
+    opacity: 0.1;
+    text-align: center
+}
+
+/* background color and font color for "The Dance Studio" logo*/
+
+.h {
+    background-color: white;
+    color: black;
+}
+
+/*this helps to organized content, and put it where we want it to go*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "FirstPosition FirstPosition FirstPosition FirstPosition Menu" "secondposition secondposition secondposition secondposition Menu" "thirdposition thirdposition thirdposition thirdposition Menu" "fourthposition fourthposition fourthposition fourthposition Menu" "FifthPosition FifthPosition FifthPosition FifthPosition FifthPosition" "PictureA PictureB PictureC PictureD PictureE";
+    color: bisque;
+    ;
+    background-color: black;
+}
+
+.box {
+    color: #fff;
+    background-color: black;
+}
+
+.box:hover {
+    background-color: bisque;
+    color: black;
+}
+
+/* Key frames, this helps transition from one position to the next*/
+
+.FirstPosition {
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureA {
+    animation-name: picture;
+    animation-duration: 5s;
+}
+
+@keyframes picture {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.secondposition {
+    animation-name: example2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes example2 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureB {
+    animation-name: picture2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes picture2 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.thirdposition {
+    animation-name: example3;
+    animation-delay: 10s;
+    animation-duration: 5s;
+}
+
+@keyframes example3 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureC {
+    animation-name: picture3;
+    animation-delay: 10s;
+    animation-duration: 5s;
+}
+
+@keyframes picture3 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fourthposition {
+    animation-name: example4;
+    animation-delay: 15s;
+    animation-duration: 5s;
+}
+
+@keyframes example4 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureD {
+    animation-name: picture4;
+    animation-delay: 15s;
+    animation-duration: 5s;
+}
+
+@keyframes picture4 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.FifthPosition {
+    animation-name: example5;
+    animation-delay: 20s;
+    animation-duration: 5s;
+}
+
+@keyframes example5 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureE {
+    animation-name: picture5;
+    animation-delay: 20s;
+    animation-duration: 5s;
+}
+
+@keyframes picture5 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.footerStamp {
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    background: black;
+    font-size: calc(10px + 1vw);
+    font-family: cursive;
+}
+
+h2 {
+    font-size: calc(10px + 3vw);
+    font-weight: bold;
+    font-family: cursive;
+    color: grey;
+    text-align: center;
+}
+
+h1 {
+    font-size: calc(15px + 5vw);
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+/*controls the text and dance the text and the dance will light up at the same time*/
+
+.RunningMan {
+    grid-area: RunningMan;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.RunningMan:hover {
+    grid-area: RunningMan;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.RunningMan:hover~.PictureA {
+    grid-area: PictureA;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+.HitFolks {
+    grid-area: HitFolks;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.Whip {
+    grid-area: Whip;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.Whip:hover {
+    grid-area: Whip;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.Whip:hover~.PictureB {
+    grid-area: PictureB;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+.NaeNae {
+    grid-area: NaeNae;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.NaeNae:hover {
+    grid-area: NaeNae;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.NaeNae:hover~.PictureC {
+    grid-area: PictureC;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+.HitFolks:hover {
+    grid-area: HitFolks;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.HitFolks:hover~.PictureD {
+    grid-area: PictureD;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+.Dab {
+    grid-area: Dab;
+    opacity: 0.2;
+    transition-duration: 2s;
+}
+
+.Dab:hover {
+    grid-area: Dab;
+    opacity: 1;
+    transition-duration: 3s;
+}
+
+.Dab:hover~.PictureE {
+    grid-area: PictureE;
+    opacity: 1;
+    background-color: bisque;
+    transition-duration: 2s;
+}
+
+/*images of each dance*/
+
+.PictureA {
+    grid-area: PictureA;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureB {
+    grid-area: PictureB;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureC {
+    grid-area: PictureC;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureD {
+    grid-area: PictureD;
+    opacity: 0.1;
+    text-align: center
+}
+
+.PictureE {
+    grid-area: PictureE;
+    opacity: 0.1;
+    text-align: center
+}
+
+/*helps place the content*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: "RunningMan RunningMan RunningMan RunningMan RunningMan" "Whip Whip Whip Whip Whip" "NaeNae NaeNae NaeNae NaeNae NaeNae" "HitFolks HitFolks HitFolks HitFolks HitFolks" "Dab Dab Dab Dab Dab" "PictureA PictureB PictureC PictureD PictureE";
+    background-color: black;
+    color: #444;
+}
+
+/*features of each box*/
+
+.box {
+    color: #fff;
+    background-color: black;
+}
+
+/*changes box features when hovered over*/
+
+.box:hover {
+    background-color: bisque;
+}
+
+/*dynamics of page title*/
+
+.h {
+    background-color: white;
+    color: black;
+}
+
+.intro {
+    background-color: #fff;
+}
+
+/*helps transition from one dance to the next*/
+
+.RunningMan {
+    animation-name: example;
+    animation-duration: 5s;
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureA {
+    animation-name: picture;
+    animation-duration: 5s;
+}
+
+@keyframes picture {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.Whip {
+    animation-name: example2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes example2 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureB {
+    animation-name: picture2;
+    animation-delay: 5s;
+    animation-duration: 5s;
+}
+
+@keyframes picture2 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.NaeNae {
+    animation-name: example3;
+    animation-delay: 10s;
+    animation-duration: 5s;
+}
+
+@keyframes example3 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureC {
+    animation-name: picture3;
+    animation-delay: 10s;
+    animation-duration: 5s;
+}
+
+@keyframes picture3 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.HitFolks {
+    animation-name: example4;
+    animation-delay: 15s;
+    animation-duration: 5s;
+}
+
+@keyframes example4 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureD {
+    animation-name: picture4;
+    animation-delay: 15s;
+    animation-duration: 5s;
+}
+
+@keyframes picture4 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.Dab {
+    animation-name: example5;
+    animation-delay: 20s;
+    animation-duration: 5s;
+}
+
+@keyframes example5 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+        color: black;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.PictureE {
+    animation-name: picture5;
+    animation-delay: 20s;
+    animation-duration: 5s;
+}
+
+@keyframes picture5 {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+        background-color: bisque;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.footerStamp {
+    text-align: center;
+    width: 100%;
+}
