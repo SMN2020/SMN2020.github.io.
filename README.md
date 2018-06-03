@@ -1,8 +1,3 @@
 
-# Dance-Website
-# Dance-Website
-# SMN2020.github.io.
-# SMN2020.github.io.
-# Website
-# Website
-# Website
+# Our Repo on GitHub SMN2020.github.io.
+<a name="user-content-DanceOpeningPage>Our Homepage</a>
