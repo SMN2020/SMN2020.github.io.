@@ -32,7 +32,7 @@ function quizfunction() {
     },
     correctAnswer: "a"
   }, {
-    question: "Which two celebrities are featured om the main page?",
+    question: "Which two celebrities are featured on the main page?",
     answers: {
       a: "Chris Brown and Riccardo Cocchi",
       b: "Beyonce and J. Cole",
