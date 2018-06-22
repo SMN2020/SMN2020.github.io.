@@ -75,6 +75,7 @@ h3 {
     width: 0;
     height: 100%;
     transition: .5s ease;
+    font-size:cacl(10px+1vw);
 }
 
 .Container:hover .yuliacontent {
@@ -107,6 +108,7 @@ h3 {
     background-color: bisque;
     overflow: hidden;
     width: 0;
+    font-size:cacl(10px+1vw);
     height: 100%;
     transition: .5s ease;
 }
