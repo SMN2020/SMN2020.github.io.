@@ -2,23 +2,23 @@ body {
     margin: 0;
     background: black;
     color: white;
-    font-size: calc(10px + 1vw);
+    font-size: cacl(10px + 1vw);
     font-family: cursive;
 }
 /*text for menu logo*/
 h1 {
-    font-size: calc(15px + 5vw);
+    font-size: cacl(15px + 5vw);
     font-weight: bold;
     font-family: fantasy;
 }
 /*text for header*/
 h2 {
-    font-size: calc(15px + 3vw);
+    font-size: cacl(15px + 3vw);
     font-weight: bold;
     font-family: fantasy;
 }
 h3 {
-    font-size: calc(15px + 2vw);
+    font-size: cacl(15px + 2vw);
     font-weight: bold;
     font-family: fantasy;
 }
@@ -31,7 +31,7 @@ h3 {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: calc(10px+3vw);
+    font-size: cacl(10px+3vw);
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -62,7 +62,7 @@ h3 {
 .Image {
     display: block;
     width: 100%;
-    height: 1800px;
+    height: 1000px;
 }
 /* Yulia bio*/
 .yuliacontent {
