@@ -85,7 +85,7 @@ h3 {
 /*tect in bio*/
 .text {
     color: grey;
-    font-size: calc(10px+1vw);
+    font-size: cacl(10px+1vw);
     font-family: monospace;
     position: absolute;
     top: 50%;
@@ -97,7 +97,7 @@ h3 {
     position: relative;
     width: 100%;
     grid-area: container2;
-    font-size(10px+1vw);
+    font-size:cacl(10px+1vw);
 }
 /*riccardo bio*/
 .riccardocontent {
